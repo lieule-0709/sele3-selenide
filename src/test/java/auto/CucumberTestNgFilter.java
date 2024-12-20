@@ -1,4 +1,4 @@
-package com.example.cucumberjvm;
+package auto;
 
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.Pickle;

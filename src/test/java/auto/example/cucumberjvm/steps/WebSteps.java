@@ -1,4 +1,4 @@
-package com.example.cucumberjvm.steps;
+package auto.example.cucumberjvm.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
