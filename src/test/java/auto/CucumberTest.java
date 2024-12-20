@@ -1,4 +1,4 @@
-package com.example.cucumberjvm;
+package auto;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
