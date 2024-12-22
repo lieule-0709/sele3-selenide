@@ -1,4 +1,4 @@
-package auto.google_test.pages;
+package pages;
 
 import com.codeborne.selenide.*;
 
