@@ -10,7 +10,7 @@ public class StepDefs {
 
     @Given("Step from {string} in {string} feature file")
     public void step(String scenario, String file) {
-        String info = "Thread ID - %2d - %s from %s feature file.\n".formatted(Thread.currentThread().getId(), scenario, file);
+        String info = "Thread ID - %2d - %s from %s feature file.\n".formatted(Thread.currentThread().threadId(), scenario, file);
         log.info(info);
     }
 }
