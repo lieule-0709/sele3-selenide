@@ -3,12 +3,16 @@ package steps.examples;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Random;
 
 import static org.testng.Assert.assertEquals;
 
 public class WebSteps {
+
+    private static final Logger log = LoggerFactory.getLogger(WebSteps.class);
 
     @When("^I open labels page$")
     public void openLabelsPage() {
@@ -23,6 +27,8 @@ public class WebSteps {
 
     @And("I create label with title {string}")
     public void createLabelWithTitle(final String title) {
+//        log.info("Test Rerun");
+//        assertEquals(title, "This is a label with title " + title);
         maybeThrowElementNotFoundException();
     }
 
@@ -63,7 +69,6 @@ public class WebSteps {
 
     @Then("I should see label with title {string}")
     public void iShouldSeeLabelWithTitle(String text) {
-
     }
 
     @When("I open issue with id {int}")
