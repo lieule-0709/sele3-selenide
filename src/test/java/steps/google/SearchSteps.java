@@ -1,7 +1,7 @@
-package auto.google_test.steps;
+package steps.google;
 
-import auto.google_test.pages.GooglePage;
-import auto.google_test.pages.SearchResultsPage;
+import pages.GooglePage;
+import pages.SearchResultsPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
