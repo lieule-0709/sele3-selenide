@@ -1,4 +1,4 @@
-@label-web
+@labels-web
 @allure.label.owner:eroshenkoam
 Feature: Labels
 

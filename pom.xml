@@ -45,13 +45,6 @@
             <artifactId>selenide</artifactId>
             <version>7.6.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.testng</groupId>-->
-        <!--            <artifactId>testng</artifactId>-->
-        <!--            <version>7.10.2</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -85,22 +78,6 @@
             <version>2.29.1</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-        <!--        <dependency>-->
-        <!--            <groupId>io.cucumber</groupId>-->
-        <!--            <artifactId>cucumber-junit</artifactId>-->
-        <!--            <version>7.20.1</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <!--        <dependency>-->
-        <!--            <groupId>junit</groupId>-->
-        <!--            <artifactId>junit</artifactId>-->
-        <!--            <version>4.13.2</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
-
-
     </dependencies>
 
 
@@ -124,7 +101,11 @@
                     <properties>
                         <property>
                             <name>dataproviderthreadcount</name>
-                            <value>10</value>
+                            <value>3</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>retry.AnnotationTransformer</value>
                         </property>
                     </properties>
                 </configuration>

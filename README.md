@@ -4,9 +4,14 @@
 
 - [x] Selenide FW (https://selenide.org/): automation FW, test FW
 - [x] Reports: Allure Report
-- [ ] Test retry: test failed => retry (1, 2) => immediately of after done
+- [x] Test retry: test failed => retry (1, 2) => immediately of after done 
+  - Override IRetryAnalyzer and IAnnotationTransformer of TestNG and add listener class
 - [x] Parallel/distributed testing
-- [ ] Cross browsers testing: Chrome, Edge
+- [x] Cross browsers testing: Chrome, Edge
+  - By using in cmd
+      - -Dselenide.browser=chrome
+      - -Dselenide.browser=edge
+      - -Dselenide.browser=firefox
 - [ ] Selenium Grid/Shard
 - [ ] Test cases: VJ, Agoda, TBD
 
