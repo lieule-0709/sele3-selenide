@@ -1,10 +1,15 @@
 package retry;
 
+import enums.PropKey;
+import io.cucumber.java.sl.In;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
+import utils.PropertiesHelper;
 
 public class Retry implements IRetryAnalyzer {
-    int maxRetries = 3;
+    int maxRetries = System.getProperty(PropKey.RETRY.getKey())!= null ?
+            Integer.parseInt(System.getProperty(PropKey.RETRY.getKey())) :
+            Integer.parseInt(PropertiesHelper.getProperty(PropKey.RETRY));
     int count = 0;
 
     @Override
