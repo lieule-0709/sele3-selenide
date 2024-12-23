@@ -27,8 +27,8 @@ public class WebSteps {
 
     @And("I create label with title {string}")
     public void createLabelWithTitle(final String title) {
-//        log.info("Test Rerun");
-//        assertEquals(title, "This is a label with title " + title);
+        log.info("Test Rerun");
+        assertEquals(title, "This is a label with title " + title);
         maybeThrowElementNotFoundException();
     }
 
