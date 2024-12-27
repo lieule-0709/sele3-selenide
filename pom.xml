@@ -78,6 +78,13 @@
             <version>2.29.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.20.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 
@@ -96,8 +103,8 @@
                     <systemPropertyVariables>
                         <allure.results.directory>${project.basedir}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
-<!--                    <parallel>classes</parallel>-->
-<!--                    <threadCount>4</threadCount>-->
+                    <!--                    <parallel>classes</parallel>-->
+                    <!--                    <threadCount>4</threadCount>-->
                     <properties>
                         <property>
                             <name>dataproviderthreadcount</name>

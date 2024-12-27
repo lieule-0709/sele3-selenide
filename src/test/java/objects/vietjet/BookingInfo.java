@@ -6,20 +6,20 @@ public class BookingInfo {
     FlyType flyType = FlyType.RETURN;
     String from;
     String to;
-    String fromDate;
-    String toDate;
+    int fromDate;
+    int toDate;
     Passengers passengers = new Passengers.Builder().setAdults(1).build();
     String promotionCode = "";
     Boolean findLowestFare = false;
 
-    public BookingInfo(String from, String to, String fromDate, String toDate) {
+    public BookingInfo(String from, String to, int fromDate, int toDate) {
         this.from = from;
         this.to = to;
         this.fromDate = fromDate;
         this.toDate = toDate;
     }
 
-    public BookingInfo(FlyType flyType, String from, String to, String fromDate, String toDate, Passengers passengers, String promotionCode, Boolean findLowestFare) {
+    public BookingInfo(FlyType flyType, String from, String to, int fromDate, int toDate, Passengers passengers, String promotionCode, Boolean findLowestFare) {
         this.flyType = flyType;
         this.from = from;
         this.to = to;
@@ -42,11 +42,11 @@ public class BookingInfo {
         return to;
     }
 
-    public String getFromDate() {
+    public int getFromDate() {
         return fromDate;
     }
 
-    public String getToDate() {
+    public int getToDate() {
         return toDate;
     }
 
