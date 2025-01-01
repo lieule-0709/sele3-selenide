@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 @Test
 @CucumberOptions(
         features = {"src/test/resources/"},
-        glue = {"steps"},
+        glue = {"steps", "utils.hooks"},
         plugin = {
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
                 "progress",
@@ -14,7 +14,6 @@ import org.testng.annotations.Test;
         }
 )
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
-
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {

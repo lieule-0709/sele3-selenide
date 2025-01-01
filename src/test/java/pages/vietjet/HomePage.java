@@ -14,7 +14,7 @@ public class HomePage {
     private final SelenideElement laterReceiveOfferNotification = $("#NC_CTA_TWO");
     private final SelenideElement flyTypeReturn = $(By.xpath("//input[@value='roundTrip']"));
     private final SelenideElement flyTypeOneWay = $(By.xpath("//input[@value='oneway']"));
-    private final SelenideElement departDateInput = $(By.xpath("//p[.='Departure date']")).sibling(0);
+    private final SelenideElement departDateLbl = $(By.xpath("//p[.='Departure date']"));
     private final ElementsCollection dateFromTodayBtn = $$(By.xpath("//button[contains(@class, 'rdrDay') and not (contains(@class,'rdrDayPassive') or contains(@class,'rdrDayDisabled'))]"));
     private final SelenideElement fromIpt = $(By.xpath("//div[label[.='From']]//input"));
     private final SelenideElement toIpt = $(By.xpath("//div[label[.='To']]//input"));
@@ -47,9 +47,9 @@ public class HomePage {
         }
         fromIpt.setValue(bookingInfo.getFrom());
         toIpt.setValue(bookingInfo.getTo());
-        departDateInput.click();
+        departDateLbl.click();
         selectDateFromToday(bookingInfo.getFromDate());
         selectDateFromToday(bookingInfo.getToDate());
-        letGoBtn.click();
+        letGoBtn.scrollTo().click();
     }
 }
