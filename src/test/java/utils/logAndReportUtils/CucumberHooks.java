@@ -1,4 +1,4 @@
-package utils.hooks;
+package utils.logAndReportUtils;
 
 import com.codeborne.selenide.Selenide;
 import io.cucumber.java.After;
