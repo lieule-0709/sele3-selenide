@@ -3,7 +3,7 @@ package enums;
 public enum PropKey {
     RETRY("retry");
 
-    private String key;
+    private final String key;
 
     PropKey(String key) {
         this.key = key;

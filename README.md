@@ -1,6 +1,28 @@
-# sele3-selenide
+## sele3-selenide
 
-# Output:
+## Table of content
+
+- [Using tool and libs](#using-tool-and-libs-)
+- [Project structor](#project-structure)
+- [Output](#output)
+- [User case](#user-cases)
+
+
+## Using tool and Libs 
+
+- java corretto-21
+- Selenide 7.6.1
+- Cucumber-java, cucumber-testng, cucumber-picocontainer 7.20.1
+- allure-testng, allure-cucumber7-jvm 2.29.1
+
+## Project structure
+
+- src/resources/: All test features
+- src/test/java/pages: The Page Object Model
+- src/test/steps: Define steps and their corresponding actions
+- src/test/utils: Define the methods supporting for log, string,...
+
+## Output:
 
 - [x] Selenide library (https://selenide.org/) with Cucumber and TestNG
 - [x] Reports: Allure Report
@@ -17,7 +39,8 @@
 - [ ] Test cases: VJ, Agoda, TBD
 - [ ] Schedule test, send email notification result with summary
 
-# User cases:
+
+## User cases:
 - [ ] Content testing
 - [ ] Multiple languages testing
 - [x] Group tests by purposes: regression, smoke/sanity test
